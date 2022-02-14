@@ -8,7 +8,7 @@ const computerShowIcon = document.querySelector('.computer i');
 
 const MatchResult = document.getElementById('MatchResult');
 
-const ComputerClass = ['fa fa-hand-rock-o fa-4x', 'fa fa-hand-paper-o fa-4x', 'fa fa-hand-scissors-o fa-4x'];
+const ComputerClass = ['fa-solid fa-hand-back-fist fa-4x', 'fa-solid fa-hand  fa-4x', 'fa-solid fa-hand-scissors fa-4x'];
 
 var playerScore = 1;
 var computerScore = 1;
@@ -69,3 +69,5 @@ const game = () => {
         });
     });
 }
+
+game();
