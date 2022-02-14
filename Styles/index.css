@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    --var-color : black;
+    background-color: var(--var-color);
+    color: whitesmoke;
+    
+}
+
+h1
+{
+    text-align: center;
+    font-weight: 700;
+    color: blue;
+    margin: 30px;
+}
+
+h2
+{
+    text-align: center;
+    margin: 5px;
+    color: brown;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container .section
+{
+    width: 350px;
+    margin: 20px 50px;
+}
+
+.section .info
+{
+    background: rgb(10, 10, 10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.info span , .info h3
+{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0px 10px;
+    font-family: sans-serif;
+    color: white;
+}
+.show
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background : rgb(41, 40, 40);
+    height: 220px;
+}
+
+.show i
+{
+    color: orange;
+}
+
+.select
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 500px;
+}
+
+.select button
+{
+    margin: 0 20px;
+    padding: 25px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background : rgb(41, 40, 40);
+    font-size: 33px;
+    color: orange;
+}
+
+button:hover
+{
+    background-color: azure;
+}
+
+@media screen and (max-width:720px)
+{
+    .container
+    {
+        display:flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0px;
+    }    
+    .select
+    {
+        margin: 0px;
+        width: 295px;
+    }
+    .container .section
+    {
+        margin-left: 10px;
+    }
+    .info span , .info h3
+    {
+        font-size: 20px;
+        
+    }
+    .show
+    {
+        height: 150px;
+    }
+}
